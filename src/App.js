@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { useState } from 'react';
+import Scan from './Scan';
 function App() {
+  const [result, setresult] = useState('');
+  function onNewScanResult (rs){
+    setresult(rs)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {result}
+      <Scan      fps={10}
+                qrbox={250}
+                disableFlip={false}
+                qrCodeSuccessCallback={onNewScanResult}
+                aspectRatio={1}/>
+    
     </div>
   );
 }
