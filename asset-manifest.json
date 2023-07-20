@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/scanapp/static/css/main.ba17183d.css",
+    "main.css": "/scanapp/static/css/main.21ddb1a7.css",
     "main.js": "/scanapp/static/js/main.4e3501a6.js",
     "index.html": "/scanapp/index.html"
   },
   "entrypoints": [
-    "static/css/main.ba17183d.css",
+    "static/css/main.21ddb1a7.css",
     "static/js/main.4e3501a6.js"
   ]
 }
