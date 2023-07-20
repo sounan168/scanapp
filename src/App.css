@@ -6,7 +6,18 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+#html5-qrcode-button-camera-start{
+  background-color: aquamarine;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+#html5-qrcode-button-camera-stop{
+  background-color:red;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
