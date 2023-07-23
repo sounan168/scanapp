@@ -1,11 +1,10 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
 #html5-qrcode-button-camera-start{
   background-color: aquamarine;
   border: none;
@@ -38,7 +37,17 @@
 .App-link {
   color: #61dafb;
 }
+.test section div{
+ 
+  height: 300px;
 
+}
+.test{
+
+}
+div section { 
+  border-radius: 16px;                   
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

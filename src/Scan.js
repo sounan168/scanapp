@@ -63,7 +63,7 @@
 
 import React, {useState} from 'react'
 // import { Link } from "react-router-dom";
-import {QrReader} from 'react-qr-reader'
+import Qrscan from 'react-qr-reader'
 
 function QRscanner() {
 
@@ -83,17 +83,16 @@ var id =10
             <span>QR Scanner</span>
             
             <center>
-                <div style={{width:'100%'}}>
+                <div className='test'>
 
-                <QrReader
-                    
+                <Qrscan
+                    videoStyle={{width:'100%'}}
                     delay={300}
                     constraints={{
                         facingMode: 'environment'
                     }}
                     onError={handleError}
-                    onResult={handleScan}
-                    // onScan={handleScan}
+                    onScan={handleScan}
                     
                 />
                 </div>
